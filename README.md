@@ -1,4 +1,4 @@
-# AI Debugging Agents 🤖
+# AI Debugging Agents 
 
 > A multi-agent AI system where agents collaborate to find and fix bugs in code automatically.
 
