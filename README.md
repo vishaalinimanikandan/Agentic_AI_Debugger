@@ -5,10 +5,10 @@
 ##  What This Does
 
 Four AI agents work together like a debugging team:
-- ** Bug Detective**: Scans code for issues
-- ** Fix Master**: Generates solutions  
-- ** Validator**: Tests if fixes work
-- ** Learner**: Improves from results
+- Bug Detective: Scans code for issues
+- Fix Master: Generates solutions  
+- Validator: Tests if fixes work
+- Learner: Improves from results
 
 ##  Quick Start
 
@@ -96,7 +96,7 @@ The system learns from both successes and failures, building knowledge for futur
 
 ##  Key Insights
 
-1. **Multi-agent coordination** works better than single AI for complex tasks
+1. **Multi-agent coordination** works better than a single AI for complex tasks
 2. **Learning from failures** is as valuable as learning from successes  
 3. **Confidence scoring** makes AI systems more trustworthy
 4. **Specialized agents** outperform generalist approaches
@@ -105,7 +105,4 @@ The system learns from both successes and failures, building knowledge for futur
 
 Read the full story behind this project: [Medium Article Link]
 
-##  Contributing
-
-Want to add new bug types or improve the agents? Check out the issues or submit a PR!
 
