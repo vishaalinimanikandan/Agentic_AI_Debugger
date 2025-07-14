@@ -1,0 +1,119 @@
+
+============================================================
+TEST CASE 1
+============================================================
+Original code:
+
+def calculate_average(numbers):
+    return sum(numbers) / len(numbers)
+
+result = calculate_average([1, 2, 3, 4, 5])
+print(f"Average: {result}")
+
+
+------------------------------------------------------------
+ Starting Multi-Agent Debugging Process
+==================================================
+Bug Detective : Analyzing code for potential issues...
+Bug Detective : Found 1 potential issues
+Fix Master : Generating fixes for 1 bugs...
+Fix Master : Generated 1 potential fixes
+Validator: Validating 1 fixes...
+Validator: 0/1 fixes passed validation
+Learner: Learning from 1 validation results...
+
+Learner: Learning Summary
+========================================
+ZeroDivisionError: 0.0% success rate (0/1)
+
+Total successful patterns learned: 0
+Total failed patterns learned: 1
+
+ No successful fixes found
+
+============================================================
+TEST CASE 2
+============================================================
+Original code:
+
+def read_file(filename):
+    file = open(filename, 'r')
+    content = file.read()
+    return content
+
+data = read_file('test.txt')
+print(data)
+
+
+------------------------------------------------------------
+ Starting Multi-Agent Debugging Process
+==================================================
+Bug Detective : Analyzing code for potential issues...
+Bug Detective : Found 1 potential issues
+Fix Master : Generating fixes for 1 bugs...
+Fix Master : Generated 1 potential fixes
+Validator: Validating 1 fixes...
+Validator: 0/1 fixes passed validation
+Learner: Learning from 1 validation results...
+
+Learner: Learning Summary
+========================================
+ZeroDivisionError: 0.0% success rate (0/1)
+ResourceLeak: 0.0% success rate (0/1)
+
+Total successful patterns learned: 0
+Total failed patterns learned: 2
+
+ No successful fixes found
+
+============================================================
+TEST CASE 3
+============================================================
+Original code:
+
+def divide_numbers(a, b):
+    try:
+        return a / b
+    except:
+        return None
+
+result = divide_numbers(10, 0)
+print(result)
+
+
+------------------------------------------------------------
+ Starting Multi-Agent Debugging Process
+==================================================
+Bug Detective : Analyzing code for potential issues...
+Bug Detective : Found 1 potential issues
+Fix Master : Generating fixes for 1 bugs...
+Fix Master : Generated 1 potential fixes
+Validator: Validating 1 fixes...
+Validator: 1/1 fixes passed validation
+Learner: Learning from 1 validation results...
+
+Learner: Learning Summary
+========================================
+ZeroDivisionError: 0.0% success rate (0/1)
+ResourceLeak: 0.0% success rate (0/1)
+BroadException: 100.0% success rate (1/1)
+
+Total successful patterns learned: 1
+Total failed patterns learned: 2
+
+ Best fix found with 70.0% confidence
+
+ FIXED CODE:
+------------------------------
+
+def divide_numbers(a, b):
+    try:
+        return a / b
+    except Exception as e:
+        return None
+
+result = divide_numbers(10, 0)
+print(result)
+
+
+Explanation: Made exception handling more specific
