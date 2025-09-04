@@ -14,7 +14,7 @@ Four AI agents work together like a debugging team:
 
 ```bash
 # Clone the repo
-git clone [your-repo-url]
+git clone https://github.com/vishaalinimanikandan/Agentic_AI_Debugger.git
 cd ai-debugging-agents
 
 # Run the demo
